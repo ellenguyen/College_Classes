@@ -1,2 +1,2 @@
 # College_Classes
-Notes from non-major classes
+Notes from classes taken so far
