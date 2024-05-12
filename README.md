@@ -1,2 +1,2 @@
 # College_Classes
-Notes from classes taken so far
+Notes from other classes taken so far
