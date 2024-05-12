@@ -1,0 +1,49 @@
+Optional Self Practice about Stored Functions and Triggers
+(Provided for curious minds)
+
+NOTE:
+If anything is needed for the practice but was not covered in the lectures (slides and scripts), 
+  then it's inclded in the question description.
+
+1. Stored Function
+
+1.1
+Create a function named check_glaaccount_description that checks if a given account description is already in the table: general_ledger_accounts.
+The function uses a parameter to receive the given account description to be checked. It returns 1 if the account description is in the table, 0 otherwise.
+General ledger account descriptions are unique.
+
+Notes: 
+* You don't have to use an exception to create this function.
+* If you want to implement it using an exception. Here is the hint:
+*    If a SELECT statement does not return any data, then the statement throws a specific 
+*    exception named NO_DATA_FOUND. You can use a WHEN clause to handle this exception.
+
+1.2
+Write an anoymous PL/SQL block that uses the function in 1.1 to check if the general ledger account with the description: Software is in the table general_ledger_accounts.
+If it exists, use the following statement to print a message: Software account exists.
+   DBMS_OUTPUT.PUT_LINE('Software account exists.');
+otherwise, pring a message: Software account does not exists.
+
+NOTES: 
+A. Place the following line (no semicolon) BEFORE your anonymout PL/SQL block or at the start of your script.
+     SET SERVEROUTPUT ON
+B. IF-ELSE statement syntax;
+   IF condition THEN
+      if-actions...
+   ELSE
+      else-actions...
+   END IF;
+
+-------------------
+2. Trigger
+
+2.1
+Create a trigger named invoices_before_update_payment for the table Invoices. 
+The trigger is fired and raises an application error whenever an update of the payment total is attempted
+and the payment total plus the credit total becomes larger than the invoice total in a row. 
+The application error raised uses 
+  error id: -20003
+  error message: Payment total + credit total can not be more than the invoice total!
+
+2.2
+Write an UPDATE statement that tests the trigger in 2.1 using the invoice with id 2.

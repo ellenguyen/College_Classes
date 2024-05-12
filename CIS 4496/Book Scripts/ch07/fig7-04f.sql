@@ -1,0 +1,2 @@
+INSERT INTO color_sample
+VALUES (5, DEFAULT, NULL)

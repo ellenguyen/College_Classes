@@ -1,0 +1,16 @@
+ERD Modeling Example Practice 2:
+
+Develop the ERD Model based on the following requirements about courses and their offerings.
+
+-------------
+For each course, the database keeps track of a unique course id, course title, and the number of credits.
+
+Each course has at least one course section and can have many course sections.
+
+Each course section is for exactly one course.
+
+For each course section, the database keeps track of a section id.
+
+Different courses may have the same course section id.
+
+For a particular course, the sections have different section ids.

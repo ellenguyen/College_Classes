@@ -1,0 +1,1 @@
+GRANT SELECT ON customers TO ap

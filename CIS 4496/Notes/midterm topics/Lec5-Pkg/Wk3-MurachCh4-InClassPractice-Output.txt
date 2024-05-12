@@ -1,0 +1,221 @@
+--Week 3, Murach Ch4
+--In Class Practice, Query Output
+
+Q1.
+
+VENDOR_NAME                                        INVOICE_NUMBER                                     INVOICE_D REMAINING_BALANCE
+-------------------------------------------------- -------------------------------------------------- --------- -----------------
+Abbey Office Furnishings                           203339-13                                          02-MAY-14            -282.5
+Roadway Package System, Inc                        25022117                                           24-MAY-14                 6
+Compuserve                                         21-4748363                                         09-MAY-14              9.95
+Federal Express Corporation                        43966316                                           17-MAY-14                10
+Pacific Bell                                       111-92R-10097                                      08-JUN-14             16.33
+Pacific Bell                                       111-92R-10096                                      08-JUN-14             16.33
+Pacific Bell                                       111-92R-10094                                      06-JUN-14             19.67
+Federal Express Corporation                        963253267                                          09-MAY-14              23.5
+Federal Express Corporation                        263253265                                          18-MAY-14             26.25
+Federal Express Corporation                        963253269                                          09-MAY-14             26.75
+Federal Express Corporation                        263253273                                          17-MAY-14             30.75
+
+VENDOR_NAME                                        INVOICE_NUMBER                                     INVOICE_D REMAINING_BALANCE
+-------------------------------------------------- -------------------------------------------------- --------- -----------------
+Pacific Bell                                       111-92R-10095                                      07-JUN-14              32.7
+Pacific Bell                                       111-92R-10093                                      05-JUN-14             39.77
+Coffee Break Service                               109596                                             14-JUN-14              41.8
+Federal Express Corporation                        963253262                                          22-MAY-14              42.5
+Pacific Bell                                       111-92R-10092                                      04-JUN-14             46.21
+Federal Express Corporation                        963253264                                          10-MAY-14             52.25
+Federal Express Corporation                        263253268                                          18-MAY-14             59.97
+Federal Express Corporation                        963253272                                          09-MAY-14              61.5
+Federal Express Corporation                        263253270                                          18-MAY-14             67.92
+Data Reproductions Corp                            39104                                              20-JUN-14             85.31
+Cardinal Business Media, Inc.                      134116                                             01-JUN-14             90.36
+
+VENDOR_NAME                                        INVOICE_NUMBER                                     INVOICE_D REMAINING_BALANCE
+-------------------------------------------------- -------------------------------------------------- --------- -----------------
+Federal Express Corporation                        963253263                                          10-MAY-14             109.5
+Blue Cross                                         547479217                                          17-MAY-14               116
+Federal Express Corporation                        963253271                                          09-MAY-14               158
+Blue Cross                                         547481328                                          20-MAY-14               224
+Blue Cross                                         547480102                                          19-MAY-14               224
+Zylka Design                                       97/553B                                            26-APR-14            313.55
+Ford Motor Credit Company                          9982771                                            03-JUN-14             503.2
+Ingram                                             31361833                                           23-MAY-14            579.42
+Wells Fargo Bank                                   I77271-O01                                         05-JUN-14               662
+Zylka Design                                       97/553                                             27-APR-14            904.14
+Ingram                                             31359783                                           23-MAY-14              1575
+
+VENDOR_NAME                                        INVOICE_NUMBER                                     INVOICE_D REMAINING_BALANCE
+-------------------------------------------------- -------------------------------------------------- --------- -----------------
+Zylka Design                                       97/522                                             30-APR-14           1762.13
+United Parcel Service                              989319-487                                         18-APR-14           1927.54
+United Parcel Service                              989319-497                                         17-APR-14            2312.2
+Computerworld                                      367447                                             31-MAY-14              2433
+Malloy Lithographing Inc                           0-2436                                             07-MAY-14          10976.06
+Malloy Lithographing Inc                           P-0608                                             11-APR-14          19351.18
+Data Reproductions Corp                            40318                                              18-JUL-14             21842
+
+40 rows selected. 
+
+Q2.
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Abbey Office Furnishings                           02-MAY-14 203339-13                                                         1          17.5
+Bertelsmann Industry Svcs. Inc                     31-MAY-14 509786                                                            1       6940.25
+Blue Cross                                         17-MAY-14 547479217                                                         1           116
+Blue Cross                                         19-MAY-14 547480102                                                         1           224
+Blue Cross                                         20-MAY-14 547481328                                                         1           224
+Cahners Publishing Company                         31-MAY-14 587056                                                            1        2184.5
+Cardinal Business Media, Inc.                      01-JUN-14 133560                                                            1           175
+Cardinal Business Media, Inc.                      01-JUN-14 134116                                                            1         90.36
+Coffee Break Service                               14-JUN-14 109596                                                            1          41.8
+Compuserve                                         09-MAY-14 21-4748363                                                        1          9.95
+Compuserve                                         09-MAY-14 21-4923721                                                        1          9.95
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Computerworld                                      31-MAY-14 367447                                                            1          2433
+Data Reproductions Corp                            20-JUN-14 39104                                                             1         85.31
+Data Reproductions Corp                            18-JUL-14 40318                                                             1         21842
+Dean Witter Reynolds                               06-JUN-14 75C-90227                                                         1        1367.5
+Digital Dreamworks                                 03-JUN-14 P02-3772                                                          1       7125.34
+Dristas Groom & McCormick                          23-MAY-14 94007005                                                          1           220
+Edward Data Services                               30-MAY-14 972110                                                            1        207.78
+Evans Executone Inc                                05-MAY-14 125520-1                                                          1            95
+Federal Express Corporation                        01-MAY-14 4-321-2596                                                        1            10
+Federal Express Corporation                        01-MAY-14 4-327-7357                                                        1        162.75
+Federal Express Corporation                        01-MAY-14 4-342-8069                                                        1            10
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Federal Express Corporation                        01-MAY-14 7548906-20                                                        1            27
+Federal Express Corporation                        02-MAY-14 4-314-3057                                                        1         13.75
+Federal Express Corporation                        03-MAY-14 2-000-2993                                                        1         144.7
+Federal Express Corporation                        06-MAY-14 1-202-2978                                                        1            33
+Federal Express Corporation                        07-MAY-14 1-200-5164                                                        1          63.4
+Federal Express Corporation                        09-MAY-14 963253267                                                         1          23.5
+Federal Express Corporation                        09-MAY-14 963253269                                                         1         26.75
+Federal Express Corporation                        09-MAY-14 963253271                                                         1           158
+Federal Express Corporation                        09-MAY-14 963253272                                                         1          61.5
+Federal Express Corporation                        10-MAY-14 963253256                                                         1         53.25
+Federal Express Corporation                        10-MAY-14 963253258                                                         1           111
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Federal Express Corporation                        10-MAY-14 963253260                                                         1            36
+Federal Express Corporation                        10-MAY-14 963253261                                                         1         42.75
+Federal Express Corporation                        10-MAY-14 963253263                                                         1         109.5
+Federal Express Corporation                        10-MAY-14 963253264                                                         1         52.25
+Federal Express Corporation                        11-MAY-14 963253251                                                         1          15.5
+Federal Express Corporation                        11-MAY-14 963253252                                                         1         38.75
+Federal Express Corporation                        11-MAY-14 963253254                                                         1         108.5
+Federal Express Corporation                        11-MAY-14 963253255                                                         1         53.75
+Federal Express Corporation                        12-MAY-14 963253249                                                         1        127.75
+Federal Express Corporation                        13-MAY-14 963253242                                                         1           104
+Federal Express Corporation                        13-MAY-14 963253244                                                         1            60
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Federal Express Corporation                        13-MAY-14 963253245                                                         1         40.75
+Federal Express Corporation                        13-MAY-14 963253246                                                         1           129
+Federal Express Corporation                        13-MAY-14 963253248                                                         1           241
+Federal Express Corporation                        14-MAY-14 963253232                                                         1        127.75
+Federal Express Corporation                        14-MAY-14 963253234                                                         1        138.75
+Federal Express Corporation                        14-MAY-14 963253235                                                         1        108.25
+Federal Express Corporation                        15-MAY-14 963253230                                                         1         739.2
+Federal Express Corporation                        17-MAY-14 263253273                                                         1         30.75
+Federal Express Corporation                        17-MAY-14 43966316                                                          1            10
+Federal Express Corporation                        18-MAY-14 263253253                                                         1         31.95
+Federal Express Corporation                        18-MAY-14 263253257                                                         1         22.57
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Federal Express Corporation                        18-MAY-14 263253265                                                         1         26.25
+Federal Express Corporation                        18-MAY-14 263253268                                                         1         59.97
+Federal Express Corporation                        18-MAY-14 263253270                                                         1         67.92
+Federal Express Corporation                        19-MAY-14 263253250                                                         1         42.67
+Federal Express Corporation                        20-MAY-14 263253241                                                         1          40.2
+Federal Express Corporation                        20-MAY-14 263253243                                                         1         44.44
+Federal Express Corporation                        22-MAY-14 94007069                                                          1           400
+Federal Express Corporation                        22-MAY-14 963253262                                                         1          42.5
+Federal Express Corporation                        23-MAY-14 963253237                                                         1         172.5
+Federal Express Corporation                        23-MAY-14 963253239                                                         1        147.25
+Federal Express Corporation                        23-MAY-14 963253240                                                         1            67
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Ford Motor Credit Company                          03-JUN-14 9982771                                                           1         503.2
+Franchise Tax Board                                04-JUN-14 RTR-72-3662-X                                                     1          1600
+Fresno County Tax Collector                        06-JUN-14 P02-88D77S7                                                       1        856.92
+Gostanian General Building                         01-JUN-14 121897                                                            1           450
+IBM                                                25-FEB-14 QP58872                                                           1        116.54
+IBM                                                14-MAR-14 Q545443                                                           1       1083.58
+Ingram                                             23-MAY-14 31359783                                                          1          1575
+Ingram                                             23-MAY-14 31361833                                                          1        579.42
+Malloy Lithographing Inc                           11-APR-14 P-0608                                                            1      20551.18
+Malloy Lithographing Inc                           16-APR-14 P-0259                                                            1       26881.4
+Malloy Lithographing Inc                           07-MAY-14 0-2436                                                            1      10976.06
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Malloy Lithographing Inc                           08-MAY-14 0-2058                                                            1      37966.19
+Malloy Lithographing Inc                           08-MAY-14 0-2060                                                            1      23517.58
+Pacific Bell                                       04-JUN-14 111-92R-10092                                                     1         46.21
+Pacific Bell                                       05-JUN-14 111-92R-10093                                                     1         39.77
+Pacific Bell                                       06-JUN-14 111-92R-10094                                                     1         19.67
+Pacific Bell                                       07-JUN-14 111-92R-10095                                                     1          32.7
+Pacific Bell                                       08-JUN-14 111-92R-10096                                                     1         16.33
+Pacific Bell                                       08-JUN-14 111-92R-10097                                                     1         16.33
+Pollstar                                           04-JUN-14 77290                                                             1          1750
+Postmaster                                         07-JUN-14 CBM9920-M-T77109                                                  1           290
+Reiter's Scientific & Pro Books                    17-APR-14 C73-24                                                            1           600
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Roadway Package System, Inc                        24-MAY-14 25022117                                                          1             6
+Roadway Package System, Inc                        25-MAY-14 24946731                                                          1         25.67
+Roadway Package System, Inc                        27-MAY-14 24863706                                                          1             6
+Roadway Package System, Inc                        29-MAY-14 24780512                                                          1             6
+Suburban Propane                                   11-JUN-14 111897                                                            1         16.62
+United Parcel Service                              17-APR-14 989319-497                                                        1        2312.2
+United Parcel Service                              18-APR-14 989319-487                                                        1       1927.54
+United Parcel Service                              19-APR-14 989319-477                                                        1       2184.11
+United Parcel Service                              24-APR-14 989319-437                                                        1       2765.36
+United Parcel Service                              24-APR-14 989319-447                                                        1       3689.99
+United Parcel Service                              24-APR-14 989319-457                                                        1       3813.33
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+United Parcel Service                              24-APR-14 989319-467                                                        1       2318.03
+United Parcel Service                              25-APR-14 989319-427                                                        1       2115.81
+United Parcel Service                              26-APR-14 989319-417                                                        1       2051.59
+Wakefield Co                                       26-APR-14 97-1024A                                                          1        356.48
+Wang Laboratories, Inc.                            16-APR-14 MABO1489                                                          1        936.93
+Wells Fargo Bank                                   05-JUN-14 I77271-O01                                                        1            50
+Wells Fargo Bank                                   05-JUN-14 I77271-O01                                                        2          75.6
+Wells Fargo Bank                                   05-JUN-14 I77271-O01                                                        3          58.4
+Wells Fargo Bank                                   05-JUN-14 I77271-O01                                                        4           478
+Yesmed, Inc                                        04-JUN-14 10843                                                             1       4901.26
+Zylka Design                                       26-APR-14 97/553B                                                           1        313.55
+
+VENDOR_NAME                                        INVOICE_D INVOICE_NUMBER                                     INVOICE_SEQUENCE LINE_ITEM_AMT
+-------------------------------------------------- --------- -------------------------------------------------- ---------------- -------------
+Zylka Design                                       27-APR-14 97/553                                                            1        904.14
+Zylka Design                                       30-APR-14 97/486                                                            1         953.1
+Zylka Design                                       30-APR-14 97/488                                                            1        601.95
+Zylka Design                                       30-APR-14 97/503                                                            1        639.77
+Zylka Design                                       30-APR-14 97/522                                                            1          1197
+Zylka Design                                       30-APR-14 97/522                                                            2        765.13
+Zylka Design                                       01-MAY-14 97/222                                                            1       1000.46
+Zylka Design                                       01-MAY-14 97/465                                                            1        565.15
+
+118 rows selected. 
+
+Q3.
+
+ VENDOR_ID VENDOR_NAME                                        Contact Name                                                                                         
+---------- -------------------------------------------------- -----------------------------------------------------------------------------------------------------
+        51 Blue Shield of California                          Kylie Smith                                                                                          
+       115 Roadway Package System, Inc                        Sam Smith                                                                                            
+

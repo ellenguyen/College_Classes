@@ -1,0 +1,32 @@
+1. mark nouns/noun phrases & determine ENTITY/Attributes
+   ENTITY:
+     regular:unique attribute
+     weak
+     associative
+     
+   Attributes
+     regular, unique, optional, multivalued, composite, 
+     derived,
+
+     may be for relationships   
+
+
+2. mark verbs/verb phrases & determine Relationships
+    relationships
+        word used to associate entities (either two different ones
+               or same entity: unary
+        unary,binary,ternary
+        regular,identifying
+    
+    cardinality:
+        Min: 0 (optional), 1 (mandatory), 
+        Max: 1 or many 
+        exact cardinality: e.g. (1, 20)  
+
+    relationship role: unary relationship
+
+3. verify
+     attribute: for relationship/entity?
+     attribute type
+     ENTITY type
+     Relationship type

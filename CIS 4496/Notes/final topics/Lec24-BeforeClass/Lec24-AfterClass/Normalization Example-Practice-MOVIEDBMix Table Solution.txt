@@ -1,0 +1,150 @@
+Solution to Example/Practice MovieDBMix Table
+
+=======
+
+1. 
+Initial Set of Functional Dependencies
+   ActorD--> ActorFirstName, ActorLastName
+   DirectorID--> DirectorFirstName, DirectorLastName
+   MovieID--> MovieTitle, ReleaseYear, DirectorID,DirectorFirstName, DirectorLastName
+   ActorID, MovieID--> ActorFirstName, ActorLastName, MovieTitle, ReleaseYear, 
+                       DirectorID, DirectorFirstName,DirectorLastName, Role
+
+2. Pruned Set of Functional Dependencies
+   Remove augmented functional dependencies.
+   There are no equivalent or trial functional dependencies.
+ 
+   ActorD--> ActorFirstName, ActorLastName
+   DirectorID--> DirectorFirstName, DirectorLastName
+   MovieID--> MovieTitle, ReleaseYear, DirectorID,DirectorFirstName, DirectorLastName
+   ActorID, MovieID--> Role
+
+
+************** Normalize the set in 2. to 3NF ****************
+
+3. Types of FDs (Full, Partial, Transitive):
+
+Partial 
+   ActorD--> ActorFirstName, ActorLastName
+Transitive
+   DirectorID--> DirectorFirstName, DirectorLastName
+Partial
+   MovieID--> MovieTitle, ReleaseYear, DirectorID,DirectorFirstName, DirectorLastName
+Full
+   ActorID, MovieID--> Role
+
+=======
+4. 
+ MOVIEDBMIX table: already in 1NF, but NOT 2NF
+
+
+=======
+5. 
+ Normalize MOVIEDBMIX table to 2NF
+
+
+ Remove Partial FD set:
+    ActorID--> ActorFirstName, ActorLastName
+
+ Result:
+   New Table: ACTOR, in 2NF and 3NF
+      ActorID, ActorFirstName, ActorLastName
+      -------
+        PK
+
+      Full: 
+         ActorID--> ActorFirstName, ActorLastName
+
+ Remove: Partial FD set:
+    MovieID--> MovieTitle, ReleaseYear, DirectorID,DirectorFirstName, DirectorLastName
+
+ Result:
+   New Table: MOVIEDIRECTORMIX, in 2NF, NOT in 3NF
+       MovieID, MovieTitle, ReleaseYear, DirectorID,DirectorFirstName, DirectorLastName
+       -------
+         PK
+
+       Full: 
+         MovieID--> MovieTitle, ReleaseYear, DirectorID,DirectorFirstName,                                   DirectorLastName
+       
+       Transitive:
+         DirectorID--> DirectorFirstName, DirectorLastName
+
+
+ Original Table: MOVIEDBMIX, in 2NF and 3NF
+   
+   ActorID, MovieID, Role 
+   ----------------
+       PK
+    
+===========
+6.
+ Normalize tables from 5. to 3NF   
+   
+  Table ACTOR:
+      already in 3NF, no change.
+
+  Table MOVIEDBMIX:
+      already in 3NF, no change.
+  
+  Normalize table MOVIEDIRECTORMIX to 3NF:
+
+
+  Remove transitive FD set:
+    Transitive:
+       DirectorID --> DirectorFirstName, DirectorLastName
+
+  Result:
+    New Table: DIRECTOR, 3NF
+       DirectorID, DirectorFirstName, DirectorLastName
+       ----------
+          PK 
+
+     Full:
+       DirectorID --> DirectorFirstName, DirectorLastName
+
+   Table: MOVIEDIRECTORMIX (Better to rename it to MOVIE), 3NF
+       MovieID, MovieTitle, ReleaseYear, DirectorID
+       --------
+         PK
+
+     Full:
+       MovieID--> MovieTitle, ReleaseYear, DirectorID
+
+
+======================
+
+Final Result:
+
+** New Table: ACTOR, 3NF
+   ActorID, ActorFirstName, ActorLastName
+   -------
+    PK
+
+   Full
+      ActorID--> ActorFirstName, ActorLastName
+   
+
+** New Table: DIRECTOR, 3NF
+   DirectorID, DirectorFirstName, DirectorLastName
+   -----------
+     PK 
+
+   Full
+      DirectorID -> DirectorFirstName, DirectorLastName
+
+** New Table: MOVIEDIRECTORMIX (Better to rename it to MOVIE), 3NF
+   MovieID, MovieTitle, ReleaseYear, DirectorID
+   --------
+     PK
+
+   Full:
+      MovieID --> MovieTitle, ReleaseYear, DirectorID
+
+** Original Table: MOVIEDBMIX (Better to rename it to CASTING), 3NF
+   ActorID, MovieID, Role 
+   ----------------
+       PK
+
+   Full
+      ActorID, MovieID--> Role 

@@ -1,0 +1,270 @@
+--Wk 4 Murach Ch4 InClass Practice Output
+
+
+--Q7
+
+ID    NAME                
+----- --------------------
+00128 Zhang               
+12345 Shankar             
+45678 Levy                
+54321 Williams            
+76543 Brown               
+98765 Bourikas            
+
+6 rows selected. 
+
+
+--Q8
+
+ID    NAME                
+----- --------------------
+12345 Shankar             
+54321 Williams            
+
+
+--Q9
+
+ID    NAME                
+----- --------------------
+00128 Zhang               
+45678 Levy                
+76543 Brown               
+98765 Bourikas            
+
+
+--Q10
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+ASC Signs                                          CA        
+Abbey Office Furnishings                           CA        
+American Express                                   CA        
+Aztek Label                                        CA        
+BFI Industries                                     CA        
+Bertelsmann Industry Svcs. Inc                     CA        
+Bill Jones                                         CA        
+Bill Marvin Electric Inc                           CA        
+Blanchard & Johnson Associates                     CA        
+Blue Cross                                         CA        
+Blue Shield of California                          CA        
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Cal State Termite                                  CA        
+California Business Machines                       CA        
+California Chamber Of Commerce                     CA        
+California Data Marketing                          CA        
+City Of Fresno                                     CA        
+Coffee Break Service                               CA        
+Computerworld                                      CA        
+Costco                                             CA        
+Crown Printing                                     CA        
+DMV Renewal                                        CA        
+Dataforms/West                                     CA        
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Digital Dreamworks                                 CA        
+Diversified Printing & Pub                         CA        
+Dristas Groom & McCormick                          CA        
+Evans Executone Inc                                CA        
+Executive Office Products                          CA        
+Expedata Inc                                       CA        
+Ford Motor Credit Company                          CA        
+Franchise Tax Board                                CA        
+Frank E Wilber Co                                  CA        
+Fresno County Tax Collector                        CA        
+Fresno Credit Bureau                               CA        
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Fresno Photoengraving Company                      CA        
+Fresno Rack & Shelving Inc                         CA        
+Gary McKeighan Insurance                           CA        
+Golden Eagle Insurance Co                          CA        
+Gostanian General Building                         CA        
+Graylift                                           CA        
+IBM                                                CA        
+Internal Revenue Service                           CA        
+Jobtrak                                            CA        
+Kent H Landsberg Co                                CA        
+Lou Gentile's Flower Basket                        CA        
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+McKesson Water Products                            CA        
+Net Asset, Llc                                     CA        
+Office Depot                                       CA        
+Opamp Technical Books                              CA        
+Pacific Bell                                       CA        
+Pacific Gas & Electric                             CA        
+Ph Photographic Services                           CA        
+Pollstar                                           CA        
+Postmaster                                         CA        
+Publishers Marketing Assoc                         CA        
+Retirement Plan Consultants                        CA        
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Roadway Package System, Inc                        CA        
+Robbins Mobile Lock And Key                        CA        
+Shields Design                                     CA        
+State Board Of Equalization                        CA        
+State of California                                CA        
+Suburban Propane                                   CA        
+Texaco                                             CA        
+The Fresno Bee                                     CA        
+The Presort Center                                 CA        
+The Windows Deck                                   CA        
+Towne Advertiser's Mailing Svcs                    CA        
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Unocal                                             CA        
+Valprint                                           CA        
+Vision Envelope & Printing                         CA        
+Wakefield Co                                       CA        
+Wang Laboratories, Inc.                            CA        
+Yale Industrial Trucks-Fresno                      CA        
+Yesmed, Inc                                        CA        
+Zip Print & Copy Center                            CA        
+Zylka Design                                       CA        
+AT&T                                               Outside CA
+American Booksellers Assoc                         Outside CA
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Ascom Hasler Mailing Systems                       Outside CA
+Baker & Taylor Books                               Outside CA
+Boucher Communications Inc                         Outside CA
+Cahners Publishing Company                         Outside CA
+Capital Resource Credit                            Outside CA
+Cardinal Business Media, Inc.                      Outside CA
+Champion Printing Company                          Outside CA
+Cmg Information Services                           Outside CA
+Compuserve                                         Outside CA
+Computer Library                                   Outside CA
+Courier Companies, Inc                             Outside CA
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Custom Printing Company                            Outside CA
+Data Reproductions Corp                            Outside CA
+Dean Witter Reynolds                               Outside CA
+Edward Data Services                               Outside CA
+Enterprise Communications Inc                      Outside CA
+Federal Express Corporation                        Outside CA
+Ingram                                             Outside CA
+Leslie Company                                     Outside CA
+Malloy Lithographing Inc                           Outside CA
+Mcgraw Hill Companies                              Outside CA
+Micro Center                                       Outside CA
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Nat Assoc of College Stores                        Outside CA
+National Information Data Ctr                      Outside CA
+Naylor Publications Inc                            Outside CA
+Newbrige Book Clubs                                Outside CA
+Nielson                                            Outside CA
+Open Horizons Publishing                           Outside CA
+Publishers Weekly                                  Outside CA
+Quality Education Data                             Outside CA
+RR Bowker                                          Outside CA
+Register of Copyrights                             Outside CA
+Reiter's Scientific & Pro Books                    Outside CA
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Rich Advertising                                   Outside CA
+Simon Direct Inc                                   Outside CA
+Small Press                                        Outside CA
+Springhouse Corp                                   Outside CA
+The Drawing Board                                  Outside CA
+The Library Ltd                                    Outside CA
+The Mailers Guide Co                               Outside CA
+US Postal Service                                  Outside CA
+United Parcel Service                              Outside CA
+Venture Communications Int'l                       Outside CA
+Wells Fargo Bank                                   Outside CA
+
+VENDOR_NAME                                        VENDOR_STA
+-------------------------------------------------- ----------
+Zee Medical Service Co                             Outside CA
+
+122 rows selected. 
+
+
+--Q11
+
+ACCOUNT_NUMBER ACCOUNT_DESCRIPTION                               
+-------------- --------------------------------------------------
+           100 Cash                                              
+           110 Accounts Receivable                               
+           150 Furniture                                         
+           160 Computer Equipment                                
+           162 Capitalized Lease                                 
+           167 Software                                          
+           170 Other Equipment                                   
+           181 Book Development                                  
+           200 Accounts Payable                                  
+           205 Royalties Payable                                 
+           230 Sales Taxes Payable                               
+
+ACCOUNT_NUMBER ACCOUNT_DESCRIPTION                               
+-------------- --------------------------------------------------
+           234 Medicare Taxes Payable                            
+           237 State Payroll Taxes Payable                       
+           238 Employee FICA Taxes Payable                       
+           239 Employer FICA Taxes Payable                       
+           241 Employer FUTA Taxes Payable                       
+           242 Employee SDI Taxes Payable                        
+           243 Employer UCI Taxes Payable                        
+           251 IBM Credit Corporation Payable                    
+           280 Capital Stock                                     
+           290 Retained Earnings                                 
+           300 Retail Sales                                      
+
+ACCOUNT_NUMBER ACCOUNT_DESCRIPTION                               
+-------------- --------------------------------------------------
+           301 College Sales                                     
+           302 Trade Sales                                       
+           306 Consignment Sales                                 
+           310 Compositing Revenue                               
+           394 Book Club Royalties                               
+           400 Book Printing Costs                               
+           403 Book Production Costs                             
+           500 Salaries and Wages                                
+           505 FICA                                              
+           506 FUTA                                              
+           507 UCI                                               
+
+ACCOUNT_NUMBER ACCOUNT_DESCRIPTION                               
+-------------- --------------------------------------------------
+           508 Medicare                                          
+           521 Utilities                                         
+           528 IBM Lease                                         
+           532 Equipment Rental                                  
+           550 Packaging Materials                               
+           551 Business Forms                                    
+           555 Collection Agency Fees                            
+           556 Credit Card Handling                              
+           565 Bank Fees                                         
+           568 Auto License Fee                                  
+           576 PC Software                                       
+
+ACCOUNT_NUMBER ACCOUNT_DESCRIPTION                               
+-------------- --------------------------------------------------
+           582 Travel and Accomodations                          
+           590 Business Insurance                                
+           610 Charitable Contributions                          
+           611 Profit Sharing Contributions                      
+           620 Interest Paid to Banks                            
+           621 Other Interest                                    
+           630 Federal Corporation Income Taxes                  
+           631 State Corporation Income Taxes                    
+           632 Sales Tax                                         
+
+53 rows selected. 
+

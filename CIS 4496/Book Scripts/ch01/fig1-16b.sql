@@ -1,0 +1,1 @@
+CALL update_invoices_credit_total('367447', 35.89)

@@ -1,0 +1,1 @@
+SELECT * FROM float_sample

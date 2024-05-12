@@ -1,0 +1,146 @@
+
+Solution to Practice Airport Mix Table:
+  Does not contain answers to questions about update anomaly.
+
+=======
+Short Notations Used:
+
+AID: AirlineID
+AName: AirlineName
+TID: TerminalID
+NoGates: NumberOfGates
+NoDFlights: NumberOfDepartingFlights
+
+
+=======
+
+1. 
+Initial Set of Functional Dependencies
+
+  AID --> AName, TID, NoGates
+
+  TID --> NoGates
+   
+  Date, AID --> AName, TID, NoGates, NoDFights
+
+  It's ok if you have this one below in your initial set. IF you don't, it's better. 
+      AID, TID --> AName, NoGates
+  
+=======
+
+2. 
+Pruned Set of Functional Dependencies 
+   Remove augmented functional dependencies.
+   There are no equivalent or trial functional dependencies.
+
+  Date, AID --> NoDFights
+
+  AID --> AName, TID, NoGates
+
+  TID --> NoGates
+  
+
+************** Normalize the set in 2. to 3NF ****************
+
+3. 
+Types of FDs (Full, Partial, Transitive):
+
+ Full:  Date, AID --> NoDFights
+    
+ Partial
+  AID --> AName, TID, NoGates
+  
+ Transitive
+  TID --> NoGates
+
+
+
+=======
+4. 
+ AIRPORT_MIX table: already in 1NF, but NOT 2NF
+
+=======
+5. 
+ Normalize AIRPORT_MIX table to 2NF
+
+ Remove partial FD:
+    Partial
+      AID --> AName, TID, NoGates 
+
+ Results:
+   New Table: AIRLINE_TERMINAL_MIX (in 2NF, NOT 3NF)
+          AID, AName, TID, NoGates
+          ---
+           PK  
+
+         Full
+            AID --> AName, TID, NoGates   
+
+         Transitive 
+            TID --> NoGates  
+
+  Original Table: AIRPORT_MIX (in 2NF & 3NF)
+            
+          Date, AID, NoDFights
+          ---------
+             PK
+
+          Full
+             Date, AID --> NoDFights
+   
+===========
+6.
+ Normalize tables from 5. to 3NF
+
+  Table: AIRPORT_MIX: already in 3NF, no change.
+
+  Normalize table AIRLINE_TERMINAL_MIX to 3NF:
+
+   Remove transitive FD set:
+     Transitive 
+       TID --> NoGates    
+
+   Result:
+     New table: TERMINAL  3NF
+          TID, NoGates 
+          ---
+           PK
+
+         Full:  TID --> NoGates  
+
+     Table: AIRLINE_TERMINAL_MIX (better to rename it to AIRLINE)
+         AID, AName,  TID
+         ---
+         PK
+          
+         Full   AID --> AName, TID 
+        
+
+===========
+
+Final Result:
+
+**   New Table: TERMINAL,  3NF
+          TID, NoGates 
+          ---
+           PK
+
+        Full:  TID --> NoGates 
+
+
+**   New Table: AIRLINE, 3NF
+         AID, AName,  TID
+         ---
+         PK
+          
+        Full:   AID --> AName, TID
+
+
+**   Original Table: AIRPORT_MIX (better to rename it to DEPARTURE now),  3NF
+            
+          Date, AID, NoDFights
+          ---------
+             PK
+
+        Full:  Date, AID --> NoDFights
+  

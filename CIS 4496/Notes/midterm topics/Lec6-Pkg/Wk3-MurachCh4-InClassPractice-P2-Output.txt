@@ -1,0 +1,259 @@
+--Week 3, Part 2 
+--Murach Ch4, In Class Practice
+--Output
+
+--Q4
+
+ENAME      ENAME     
+---------- ----------
+WARD       BLAKE     
+ALLEN      BLAKE     
+JAMES      BLAKE     
+MARTIN     BLAKE     
+TURNER     BLAKE     
+BLAKE      KING      
+
+6 rows selected. 
+
+
+--Q5
+
+ACCOUNT_NUMBER ACCOUNT_DESCRIPTION                                INVOICE_ID
+-------------- -------------------------------------------------- ----------
+           572 Books, Dues, and Subscriptions                              1
+           572 Books, Dues, and Subscriptions                              2
+           120 Book Inventory                                              3
+           120 Book Inventory                                              4
+           527 Computer Equipment Maintenance                              5
+           553 Freight                                                     6
+           541 Space Advertising                                           7
+           553 Freight                                                     8
+           553 Freight                                                     9
+           553 Freight                                                    10
+           553 Freight                                                    11
+           553 Freight                                                    12
+           553 Freight                                                    13
+           553 Freight                                                    14
+           540 Direct Mail Advertising                                    15
+           553 Freight                                                    16
+           523 Building Maintenance                                       17
+           540 Direct Mail Advertising                                    18
+           536 Card Deck Advertising                                      19
+           540 Direct Mail Advertising                                    19
+           536 Card Deck Advertising                                      20
+           536 Card Deck Advertising                                      21
+           536 Card Deck Advertising                                      22
+           541 Space Advertising                                          23
+           540 Direct Mail Advertising                                    24
+           553 Freight                                                    25
+           553 Freight                                                    26
+           553 Freight                                                    27
+           553 Freight                                                    28
+           553 Freight                                                    29
+           570 Office Supplies                                            30
+           553 Freight                                                    31
+           523 Building Maintenance                                       32
+           553 Freight                                                    33
+           120 Book Inventory                                             34
+           553 Freight                                                    35
+           120 Book Inventory                                             36
+           120 Book Inventory                                             37
+           553 Freight                                                    38
+           553 Freight                                                    39
+           553 Freight                                                    40
+           553 Freight                                                    41
+           572 Books, Dues, and Subscriptions                             42
+           572 Books, Dues, and Subscriptions                             43
+           553 Freight                                                    44
+           553 Freight                                                    45
+           553 Freight                                                    46
+           553 Freight                                                    47
+           553 Freight                                                    48
+           553 Freight                                                    49
+           553 Freight                                                    50
+           553 Freight                                                    51
+           553 Freight                                                    52
+           553 Freight                                                    53
+           553 Freight                                                    54
+           553 Freight                                                    55
+           553 Freight                                                    56
+           553 Freight                                                    57
+           553 Freight                                                    58
+           553 Freight                                                    59
+           553 Freight                                                    60
+           553 Freight                                                    61
+           553 Freight                                                    62
+           553 Freight                                                    63
+           553 Freight                                                    64
+           553 Freight                                                    65
+           553 Freight                                                    66
+           553 Freight                                                    67
+           553 Freight                                                    68
+           510 Group Insurance                                            69
+           553 Freight                                                    70
+           553 Freight                                                    71
+           553 Freight                                                    72
+           553 Freight                                                    73
+           553 Freight                                                    74
+           553 Freight                                                    75
+           553 Freight                                                    76
+           553 Freight                                                    77
+           553 Freight                                                    78
+           553 Freight                                                    79
+           591 Accounting                                                 80
+           541 Space Advertising                                          81
+           553 Freight                                                    82
+           553 Freight                                                    83
+           552 Postage                                                    84
+           553 Freight                                                    85
+           540 Direct Mail Advertising                                    86
+           536 Card Deck Advertising                                      87
+           536 Card Deck Advertising                                      88
+           120 Book Inventory                                             89
+           523 Building Maintenance                                       90
+           536 Card Deck Advertising                                      91
+           536 Card Deck Advertising                                      92
+           548 Web Site Production and Fees                               93
+           569 Auto Expense                                               94
+           235 Income Taxes Payable                                       95
+           520 Building Lease                                             96
+           520 Building Lease                                             97
+           522 Telephone                                                  98
+           522 Telephone                                                  99
+           580 Meals                                                     100
+           540 Direct Mail Advertising                                   100
+           570 Office Supplies                                           100
+           546 Exhibits and Shows                                        100
+           221 401K Employee Contributions                               101
+           574 Business Licenses and Taxes                               102
+           522 Telephone                                                 103
+           552 Postage                                                   104
+           522 Telephone                                                 105
+           522 Telephone                                                 106
+           522 Telephone                                                 107
+           589 Outside Services                                          108
+           580 Meals                                                     109
+           540 Direct Mail Advertising                                   110
+           510 Group Insurance                                           111
+           510 Group Insurance                                           112
+           540 Direct Mail Advertising                                   113
+           541 Space Advertising                                         114
+           403 Book Production Costs
+           290 Retained Earnings
+           237 State Payroll Taxes Payable
+           400 Book Printing Costs
+           521 Utilities
+           200 Accounts Payable
+           556 Credit Card Handling
+           611 Profit Sharing Contributions
+           162 Capitalized Lease
+           300 Retail Sales
+           110 Accounts Receivable
+           568 Auto License Fee
+           528 IBM Lease
+           243 Employer UCI Taxes Payable
+           631 State Corporation Income Taxes
+           280 Capital Stock
+           306 Consignment Sales
+           620 Interest Paid to Banks
+           394 Book Club Royalties
+           238 Employee FICA Taxes Payable
+           565 Bank Fees
+           302 Trade Sales
+           551 Business Forms
+           310 Compositing Revenue
+           251 IBM Credit Corporation Payable
+           505 FICA
+           621 Other Interest
+           550 Packaging Materials
+           507 UCI
+
+ACCOUNT_NUMBER ACCOUNT_DESCRIPTION                                INVOICE_ID
+-------------- -------------------------------------------------- ----------
+           242 Employee SDI Taxes Payable
+           170 Other Equipment
+           590 Business Insurance
+           610 Charitable Contributions
+           630 Federal Corporation Income Taxes
+           532 Equipment Rental
+           506 FUTA
+           301 College Sales
+           632 Sales Tax
+           167 Software
+           181 Book Development
+           555 Collection Agency Fees
+           500 Salaries and Wages
+           230 Sales Taxes Payable
+           241 Employer FUTA Taxes Payable
+           234 Medicare Taxes Payable
+           239 Employer FICA Taxes Payable
+           205 Royalties Payable
+           100 Cash
+           508 Medicare
+           576 PC Software
+           582 Travel and Accomodations
+           150 Furniture
+           160 Computer Equipment
+
+171 rows selected.
+
+--Q6
+
+ACCOUNT_NUMBER ACCOUNT_DESCRIPTION
+-------------- --------------------------------------------------
+           403 Book Production Costs
+           290 Retained Earnings
+           237 State Payroll Taxes Payable
+           400 Book Printing Costs
+           521 Utilities
+           200 Accounts Payable
+           556 Credit Card Handling
+           611 Profit Sharing Contributions
+           162 Capitalized Lease
+           300 Retail Sales
+           110 Accounts Receivable
+           568 Auto License Fee
+           528 IBM Lease
+           243 Employer UCI Taxes Payable
+           631 State Corporation Income Taxes
+           280 Capital Stock
+           306 Consignment Sales
+           620 Interest Paid to Banks
+           394 Book Club Royalties
+           238 Employee FICA Taxes Payable
+           565 Bank Fees
+           302 Trade Sales
+           551 Business Forms
+           310 Compositing Revenue
+           251 IBM Credit Corporation Payable
+           505 FICA
+           621 Other Interest
+           550 Packaging Materials
+           507 UCI
+           242 Employee SDI Taxes Payable
+           170 Other Equipment
+           590 Business Insurance
+           610 Charitable Contributions
+           630 Federal Corporation Income Taxes
+           532 Equipment Rental
+           506 FUTA
+           301 College Sales
+           632 Sales Tax
+           167 Software
+           181 Book Development
+           555 Collection Agency Fees
+           500 Salaries and Wages
+           230 Sales Taxes Payable
+           241 Employer FUTA Taxes Payable
+           234 Medicare Taxes Payable
+           239 Employer FICA Taxes Payable
+           205 Royalties Payable
+           100 Cash
+           508 Medicare
+           576 PC Software
+           582 Travel and Accomodations
+           150 Furniture
+           160 Computer Equipment
+
+53 rows selected.
+

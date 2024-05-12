@@ -1,0 +1,8 @@
+CONNECT ap/ap;
+
+SET SERVEROUTPUT ON;
+
+BEGIN
+  DBMS_OUTPUT.PUT_LINE('Test SQL Developer');
+END;
+/

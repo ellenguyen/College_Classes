@@ -1,0 +1,170 @@
+--Murach Ch6 In class practice
+--Output
+
+
+--Q1
+
+VENDOR_NAME                                       
+--------------------------------------------------
+Abbey Office Furnishings
+Bertelsmann Industry Svcs. Inc
+Blue Cross
+Cahners Publishing Company
+Cardinal Business Media, Inc.
+Coffee Break Service
+Compuserve
+Computerworld
+Data Reproductions Corp
+Dean Witter Reynolds
+Digital Dreamworks
+
+VENDOR_NAME                                       
+--------------------------------------------------
+Dristas Groom & McCormick
+Edward Data Services
+Evans Executone Inc
+Federal Express Corporation
+Ford Motor Credit Company
+Franchise Tax Board
+Fresno County Tax Collector
+Gostanian General Building
+IBM
+Ingram
+Malloy Lithographing Inc
+
+VENDOR_NAME                                       
+--------------------------------------------------
+Pacific Bell
+Pollstar
+Postmaster
+Reiter's Scientific & Pro Books
+Roadway Package System, Inc
+Suburban Propane
+United Parcel Service
+Wakefield Co
+Wang Laboratories, Inc.
+Wells Fargo Bank
+Yesmed, Inc
+
+VENDOR_NAME                                       
+--------------------------------------------------
+Zylka Design
+
+34 rows selected. 
+
+
+--Q2
+
+INVOICE_NUMBER                                     INVOICE_TOTAL
+-------------------------------------------------- -------------
+P-0259                                                   26881.4
+989319-477                                               2184.11
+989319-467                                               2318.03
+989319-457                                               3813.33
+989319-447                                               3689.99
+989319-437                                               2765.36
+989319-427                                               2115.81
+989319-417                                               2051.59
+0-2060                                                  23517.58
+0-2058                                                  37966.19
+587056                                                    2184.5
+
+INVOICE_NUMBER                                     INVOICE_TOTAL
+-------------------------------------------------- -------------
+509786                                                   6940.25
+P02-3772                                                 7125.34
+10843                                                    4901.26
+
+14 rows selected. 
+
+
+--Q3
+
+VENDOR_NAME                                        INVOICE_ID INVOICE_NUMBER                                     LINE_ITEM_AMT
+-------------------------------------------------- ---------- -------------------------------------------------- -------------
+Zylka Design                                               19 97/522                                                      1197
+Zylka Design                                               19 97/522                                                    765.13
+Wells Fargo Bank                                          100 I77271-O01                                                    50
+Wells Fargo Bank                                          100 I77271-O01                                                  75.6
+Wells Fargo Bank                                          100 I77271-O01                                                  58.4
+Wells Fargo Bank                                          100 I77271-O01                                                   478
+
+6 rows selected. 
+
+
+--Q4
+
+VENDOR_NAME                                        VENDOR_CITY                                        VE
+-------------------------------------------------- -------------------------------------------------- --
+Towne Advertiser's Mailing Svcs                    Santa Ana                                          CA
+Diversified Printing & Pub                         Brea                                               CA
+Zee Medical Service Co                             Washington                                         IA
+Rich Advertising                                   Fairfield                                          NJ
+Baker & Taylor Books                               Charlotte                                          NC
+Publishers Marketing Assoc                         Manhatttan Beach                                   CA
+Evans Executone Inc                                Turlock                                            CA
+Malloy Lithographing Inc                           Ann Arbor                                          MI
+US Postal Service                                  Madison                                            WI
+Golden Eagle Insurance Co                          San Diego                                          CA
+Vision Envelope & Printing                         Gardena                                            CA
+
+VENDOR_NAME                                        VENDOR_CITY                                        VE
+-------------------------------------------------- -------------------------------------------------- --
+Venture Communications Int'l                       New York                                           NY
+The Mailers Guide Co                               New Rochelle                                       NY
+Edward Data Services                               Cleves                                             OH
+United Parcel Service                              Reno                                               NV
+Blue Cross                                         Oxnard                                             CA
+Naylor Publications Inc                            Jacksonville                                       FL
+Data Reproductions Corp                            Auburn Hills                                       MI
+Boucher Communications Inc                         Fort Washington                                    PA
+Cahners Publishing Company                         The Lake                                           NV
+Federal Express Corporation                        Memphis                                            TN
+Blanchard & Johnson Associates                     Mission Viejo                                      CA
+
+VENDOR_NAME                                        VENDOR_CITY                                        VE
+-------------------------------------------------- -------------------------------------------------- --
+Cal State Termite                                  Selma                                              CA
+Publishers Weekly                                  Marion                                             OH
+The Drawing Board                                  Carol Stream                                       IL
+Nat Assoc of College Stores                        Oberlin                                            OH
+Open Horizons Publishing                           Fairfield                                          IA
+The Windows Deck                                   Santa Barbara                                      CA
+Ingram                                             Dallas                                             TX
+Bertelsmann Industry Svcs. Inc                     Valencia                                           CA
+Small Press                                        Traverse City                                      MI
+Enterprise Communications Inc                      Mclean                                             VA
+American Booksellers Assoc                         Tarrytown                                          NY
+
+VENDOR_NAME                                        VENDOR_CITY                                        VE
+-------------------------------------------------- -------------------------------------------------- --
+Leslie Company                                     Olathe                                             KS
+Newbrige Book Clubs                                Washington                                         NJ
+Capital Resource Credit                            Minneapolis                                        MN
+Texaco                                             Inglewood                                          CA
+Ascom Hasler Mailing Systems                       Shelton                                            CT
+
+38 rows selected. 
+
+
+--Q5
+
+INVOICE_ID INVOICE_NUMBER                                      VENDOR_ID BALANCE_DUE
+---------- -------------------------------------------------- ---------- -----------
+       113 40318                                                      72       21842
+         3 P-0608                                                    110    19351.18
+        34 0-2436                                                    110    10976.06
+        88 367447                                                     86        2433
+         6 989319-497                                                122      2312.2
+
+
+--Q6
+
+INVOICE_ID INVOICE_NUMBER                                      VENDOR_ID BALANCE_DUE
+---------- -------------------------------------------------- ---------- -----------
+       113 40318                                                      72       21842
+         3 P-0608                                                    110    19351.18
+        34 0-2436                                                    110    10976.06
+        88 367447                                                     86        2433
+         6 989319-497                                                122      2312.2
+

@@ -1,0 +1,39 @@
+--Murach Ch5 in class practice
+--Part 2 Output
+
+--Continued from Part 1
+--Covered topics: GROUP BY, HAVING, WHERE in summary queries
+
+
+--Q5.
+
+ACCOUNT_DESCRIPTION                                LINE_ITEM_COUNT TOTAL_LINE_ITEM_AMT
+-------------------------------------------------- --------------- -------------------
+Book Inventory                                                   6           126832.66
+Freight                                                         59            27593.65
+Card Deck Advertising                                            8             8274.68
+Building Lease                                                   2             6651.26
+Direct Mail Advertising                                          7             3351.97
+Space Advertising                                                4             3319.57
+Building Maintenance                                             3              901.48
+Group Insurance                                                  3                 564
+Postage                                                          2                 296
+Telephone                                                        6              171.01
+Meals                                                            2                91.8
+
+ACCOUNT_DESCRIPTION                                LINE_ITEM_COUNT TOTAL_LINE_ITEM_AMT
+-------------------------------------------------- --------------- -------------------
+Office Supplies                                                  2                75.9
+Books, Dues, and Subscriptions                                   2                19.9
+
+13 rows selected. 
+
+
+--Q6.
+
+VENDOR_NAME                                        DIFF_ACCT_COUNT
+-------------------------------------------------- ---------------
+Roadway Package System, Inc                                      2
+Wells Fargo Bank                                                 4
+Zylka Design                                                     3
+

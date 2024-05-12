@@ -1,0 +1,88 @@
+
+Read Uncommitted:
+   T1                     T2
+  ATM: checkingact1
+     balance: $1000       balance: $1000   
+
+                          Deposit: $1000
+
+    balance: $2000
+                          Rollback;
+                        
+
+--------------------
+
+Read Committed
+
+   T1                     T2
+  ATM: checkingact1
+     balance: $1000       balance: $1000    
+
+                          Deposit: $1000
+
+    balance: $1000
+                          Commit;  
+
+    balance: $2000
+
+--------------------
+
+Non-Repeatable Read
+   data read by T1
+       modified or deleted by T2 & committed.
+
+   T1                     T2
+  ATM: checkingact1
+     balance: $1000      balance: $1000
+
+                          Deposit: $1000
+
+    
+                          Commit;  
+
+     balance: $2000
+     ....
+
+-----------------------
+
+Phantom Read
+
+    Phantom: ghost
+
+ 
+   T1                        T2
+  ATM: 
+     delete accounts in PA
+       3 rows    
+     accounts in PA
+       0 rows         
+
+                             Add a new accout in PA
+                             Commit;  
+     
+
+     accounts in PA
+       1 rows  
+
+--------------------
+
+Lost Update
+
+   T1                     T2
+  ATM: checkingact1
+     balance: $1000       balance: $1000 
+
+                          Deposit: $1000
+                          balance $2000
+
+    withdraw: $1000
+    balance: $0
+                          Commit;  
+    commit;
+
+    balance: $0           balance: $0  
+
+
+
+
+

@@ -1,0 +1,76 @@
+
+   determinant
+    CMID -->     CMName  
+     
+    MID -> Media, Range
+
+    ACID -> ACName, SDate, Duration, CMID, CMName
+
+    ACID, MID -->  BudgetPct
+
+
+
+ Partial FD: only in table with composite PK
+    part of PK alone --> col1, col2, ...
+    & NOT entire PK
+
+
+ Full FD:
+    entire PK --> col1, col2,...
+   & no part of PK alone --> col1, col2...
+
+
+  Transitive  FD:
+      non-PK --> non-key col1, non-key col2, ...
+
+
+     remove              remove                     remove
+     repeating  	partial FD                transitive FD set
+     groups            add 1 table               add 1 table
+                     /partial FD set             / transitive FD set
+              1NF                      2NF                             3NF
+table ------> relation   --------->   no partial FD -------------->  no transitive FD
+              PK exists              "whole PK"                      "only whole key"
+             & no repeating grp                                      "nothing but whole key"
+
+most                                                                  least
+redundancy							      redundancy
+
+    CMID -->     CMName  
+     
+    MID -> Media, Range
+
+    ACID -> ACName, SDate, Duration, CMID, CMName
+
+    ACID, MID -->  BudgetPct
+ 
+
+=======================================   
+----
+remove partial FD set:
+
+
+New Table: 
+
+Original Table: 	ADCAMPAIGNMIX 
+
+
+---
+remove partial FD Set:
+
+ 
+New Table: 
+
+Original Table: 	ADCAMPAIGNMIX 
+
+
+=======================================
+remove transitive FD set:
+
+
+
+New Table:  
+
+Original Table: ADCAMPAIGNMIX 
+
+

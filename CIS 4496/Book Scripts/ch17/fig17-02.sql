@@ -1,0 +1,21 @@
+-- use the EX connection
+CONNECT ex/ex;
+
+ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MON-RR HH:MI AM';
+
+INSERT INTO date_sample VALUES (7, '02-MAR-14 09:02 AM');
+
+SELECT * FROM date_sample;
+DELETE FROM date_sample WHERE date_id = 7;
+
+ALTER SESSION SET TIME_ZONE = '-07:00';
+ALTER SESSION SET TIME_ZONE = 'MST';
+ALTER SESSION SET TIME_ZONE = 'US/Mountain';
+
+ALTER SESSION SET TIME_ZONE = LOCAL;
+ALTER SESSION SET TIME_ZONE = DBTIMEZONE;
+
+-- return to the default time zone
+ALTER SESSION SET TIME_ZONE = LOCAL;
+-- return to the default date format
+ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MON-RR';

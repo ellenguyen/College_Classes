@@ -1,0 +1,103 @@
+Functional Dependency Type Summary
+
+ Partial FD: only in table with composite PK
+    part of PK alone (& NOT entire PK) --> col1, col2, ...
+    Examples:
+       ACID -> ACName, SDate, Duration, CMID, CMName
+       MID -> Media, Range
+
+ Full FD:
+    entire PK & no part of PK alone --> col1, col2,...
+
+    Example:
+         ACID, MID -->  BudgetPct
+
+
+ Transitive  FD:
+    non-PK --> non-key col1, non-key col2, ...
+    
+    Example:  
+         CMID -->     CMName 
+
+============================================
+
+Normalization Process Summary:
+
+
+     remove              remove                     remove
+     repeating  	partial FD                transitive FD set
+     groups            add 1 table                  add 1 table
+                        /partial FD set            /transitive FD set
+              1NF                      2NF                             3NF
+table ------> relation   --------->   no partial FD -------------->  no transitive FD
+              "PK exists"              "whole PK"                      " only whole key"
+             & No repeating                                         "nothing but whole key"
+              groups
+                 
+           
+
+============================================
+
+Normalization Process (From 1NF) Shortcut Summary:
+
+
+
+1. Correctly identify functional dependency (FD) sets 
+   and prune any FD that is trivial, augmented, or equivalent.
+
+   Example:
+      
+   determinant   
+    CMID      -->     CMName      
+    ACID      -->     ACName, SDate, Duration, CMID, CMName
+    MID       -->     Media, Range
+    ACID, MID -->     BudgetPct  
+
+2. Remove overlapping non-key column from the FD set 
+        that contains this non-key column and its determinant.
+ 
+   Example:
+      
+   determinant   
+    CMID      -->     CMName      
+    ACID      -->     ACName, SDate, Duration, CMID
+    MID       -->     Media, Range
+    ACID, MID -->     BudgetPct     
+
+3. Create a relation from each FD set and mark the determinant of the FD set
+      as the primary key of the relation.
+   If the primary key of a relation is a non-primary-key column in another relation,
+         then the same colulmn in the second relation is a foreign key 
+             referencing the primary key in the first relation.
+   Each resulting relation is in 3NF.
+
+   Example:
+
+ Table:  CAMPMGR
+   CMID, CMName 
+   ----
+    PK
+
+ Table: ADCAMPAIGN
+     ACID, ACName, SDate, Duration, CMID(FK)
+     ----
+      PK    
+    
+    CMID in Table: ADCAMPAIGN is a foreign key
+       referencing the primary key CMID in Table: CAMPMGR.
+
+ Table: MODE
+    MID, Media, Range
+    ---
+    PK
+
+ Table: ADCAMPAIGNMIX
+   ACID(FK), MID(FK), BudgetPct
+   -------------------
+       PK
+
+     ACID in Table: ADCAMPAIGNMIX is a foreign key
+       referencing the primary key ACID in Table: ADCAMPAIGN.
+
+     MID in Table: ADCAMPAIGNMIX is a foreign key
+       referencing the primary key MID in Table: MODE.

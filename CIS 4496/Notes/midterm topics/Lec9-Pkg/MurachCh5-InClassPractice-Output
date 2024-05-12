@@ -1,0 +1,181 @@
+--Murach Ch5 in class practice.
+--Covered topics: GROUP BY, HAVING, WHERE in summary queries
+--Output
+
+
+--Q1.
+
+ VENDOR_ID INVOICE_TOTAL_SUM
+---------- -----------------
+        34           1200.12
+        37               564
+        48            856.92
+        72          21927.31
+        80            265.36
+        81            936.93
+        82               600
+        83           2154.42
+        86              2433
+        88            207.78
+        89                95
+
+ VENDOR_ID INVOICE_TOTAL_SUM
+---------- -----------------
+        90            356.48
+        94              17.5
+        95            171.01
+        96               662
+        97              19.9
+        99           6940.25
+       100            2184.5
+       102              41.8
+       103            1367.5
+       104           7125.34
+       105               220
+
+ VENDOR_ID INVOICE_TOTAL_SUM
+---------- -----------------
+       106             503.2
+       107              1600
+       108               450
+       110         119892.41
+       113              1750
+       114               290
+       115             43.67
+       117             16.62
+       119           4901.26
+       121           6940.25
+       122          23177.96
+
+ VENDOR_ID INVOICE_TOTAL_SUM
+---------- -----------------
+       123           4378.02
+
+34 rows selected. 
+
+
+--Q2.
+
+VENDOR_NAME                                        TOTAL_PAYMENT_AMT
+-------------------------------------------------- -----------------
+Malloy Lithographing Inc                                    86069.22
+United Parcel Service                                       18938.22
+Digital Dreamworks                                           7125.34
+Bertelsmann Industry Svcs. Inc                               6940.25
+Yesmed, Inc                                                  4901.26
+Zylka Design                                                 3760.43
+Federal Express Corporation                                  3709.13
+Cahners Publishing Company                                    2184.5
+Pollstar                                                        1750
+Franchise Tax Board                                             1600
+Dean Witter Reynolds                                          1367.5
+
+VENDOR_NAME                                        TOTAL_PAYMENT_AMT
+-------------------------------------------------- -----------------
+IBM                                                          1200.12
+Wang Laboratories, Inc.                                       936.93
+Fresno County Tax Collector                                   856.92
+Reiter's Scientific & Pro Books                                  600
+Gostanian General Building                                       450
+Wakefield Co                                                  356.48
+Postmaster                                                       290
+Dristas Groom & McCormick                                        220
+Edward Data Services                                          207.78
+Cardinal Business Media, Inc.                                    175
+Evans Executone Inc                                               95
+
+VENDOR_NAME                                        TOTAL_PAYMENT_AMT
+-------------------------------------------------- -----------------
+Roadway Package System, Inc                                    37.67
+Suburban Propane                                               16.62
+Compuserve                                                      9.95
+Wells Fargo Bank                                                   0
+Coffee Break Service                                               0
+Ford Motor Credit Company                                          0
+Ingram                                                             0
+Pacific Bell                                                       0
+Computerworld                                                      0
+Data Reproductions Corp                                            0
+Blue Cross                                                         0
+
+VENDOR_NAME                                        TOTAL_PAYMENT_AMT
+-------------------------------------------------- -----------------
+Abbey Office Furnishings                                           0
+
+34 rows selected. 
+
+
+--Q3
+
+VENDOR_NAME                                        INVOICE_COUNT TOTAL_INVOICE_AMT
+-------------------------------------------------- ------------- -----------------
+Federal Express Corporation                                   47           4378.02
+United Parcel Service                                          9          23177.96
+Zylka Design                                                   8           6940.25
+Pacific Bell                                                   6            171.01
+Malloy Lithographing Inc                                       5         119892.41
+Roadway Package System, Inc                                    4             43.67
+Blue Cross                                                     3               564
+IBM                                                            2           1200.12
+Data Reproductions Corp                                        2          21927.31
+Compuserve                                                     2              19.9
+Ingram                                                         2           2154.42
+
+VENDOR_NAME                                        INVOICE_COUNT TOTAL_INVOICE_AMT
+-------------------------------------------------- ------------- -----------------
+Cardinal Business Media, Inc.                                  2            265.36
+Digital Dreamworks                                             1           7125.34
+Yesmed, Inc                                                    1           4901.26
+Cahners Publishing Company                                     1            2184.5
+Coffee Break Service                                           1              41.8
+Fresno County Tax Collector                                    1            856.92
+Computerworld                                                  1              2433
+Dean Witter Reynolds                                           1            1367.5
+Dristas Groom & McCormick                                      1               220
+Suburban Propane                                               1             16.62
+Bertelsmann Industry Svcs. Inc                                 1           6940.25
+
+VENDOR_NAME                                        INVOICE_COUNT TOTAL_INVOICE_AMT
+-------------------------------------------------- ------------- -----------------
+Wells Fargo Bank                                               1               662
+Reiter's Scientific & Pro Books                                1               600
+Wang Laboratories, Inc.                                        1            936.93
+Pollstar                                                       1              1750
+Franchise Tax Board                                            1              1600
+Edward Data Services                                           1            207.78
+Postmaster                                                     1               290
+Gostanian General Building                                     1               450
+Abbey Office Furnishings                                       1              17.5
+Wakefield Co                                                   1            356.48
+Ford Motor Credit Company                                      1             503.2
+
+VENDOR_NAME                                        INVOICE_COUNT TOTAL_INVOICE_AMT
+-------------------------------------------------- ------------- -----------------
+Evans Executone Inc                                            1                95
+
+34 rows selected. 
+
+
+--Q4
+
+ACCOUNT_DESCRIPTION                                LINE_ITEM_COUNT TOTAL_LINE_ITEM_AMT
+-------------------------------------------------- --------------- -------------------
+Book Inventory                                                   6           126832.66
+Freight                                                         59            27593.65
+Direct Mail Advertising                                          8            25193.97
+Card Deck Advertising                                            8             8274.68
+Building Lease                                                   2             6651.26
+Space Advertising                                                4             3319.57
+Books, Dues, and Subscriptions                                   4             1220.02
+Building Maintenance                                             3              901.48
+Group Insurance                                                  3                 564
+Postage                                                          2                 296
+Telephone                                                        6              171.01
+
+ACCOUNT_DESCRIPTION                                LINE_ITEM_COUNT TOTAL_LINE_ITEM_AMT
+-------------------------------------------------- --------------- -------------------
+Meals                                                            2                91.8
+Office Supplies                                                  2                75.9
+
+13 rows selected. 
+

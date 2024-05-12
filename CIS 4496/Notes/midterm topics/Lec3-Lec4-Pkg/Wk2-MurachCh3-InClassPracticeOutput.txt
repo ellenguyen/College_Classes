@@ -1,0 +1,63 @@
+--Wk2
+--In Class Practice for Murach-Ch3
+--Query Output
+
+--Q1
+
+ENAME           EMPNO
+---------- ----------
+BLAKE            7698
+CLARK            7782
+JONES            7566
+
+
+--Q2
+
+ENAME           EMPNO
+---------- ----------
+BLAKE            7698
+CLARK            7782
+
+--Q3
+
+Work Info
+-----------------------------------------------------------------
+KING works in Dept 10
+BLAKE works in Dept 30
+CLARK works in Dept 10
+JONES works in Dept 20
+SCOTT works in Dept 20
+FORD works in Dept 20
+SMITH works in Dept 20
+ALLEN works in Dept 30
+WARD works in Dept 30
+MARTIN works in Dept 30
+TURNER works in Dept 30
+ADAMS works in Dept 20
+JAMES works in Dept 30
+MILLER works in Dept 10
+
+14 rows selected.
+
+Connected.
+
+--Q4
+
+CUSTOMER_FIRST_NAME            CUSTOMER_LAST_NAME
+------------------------------ ------------------------------
+John                           Steel
+Jose                           Pavarotti
+
+--Q5
+
+ Principal Interest Amount Total Payment Today
+---------- --------------- ------------- ---------
+     20000            1200         21200 18-JAN-22
+
+
+--Q6
+
+System Date
+-----------------------------
+18-jan-2022 12:12:23
+
